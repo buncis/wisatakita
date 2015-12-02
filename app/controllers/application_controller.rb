@@ -1,6 +1,6 @@
-require 'User_sanitizer'
-require 'Guide_sanitizer'
-require 'Admin_sanitizer'
+require 'user_sanitizer'
+require 'guide_sanitizer'
+require 'admin_sanitizer'
 
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.

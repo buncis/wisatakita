@@ -19,6 +19,6 @@
   <strong>Foto:</strong>
   <%= @wisatum.foto %>
 </p>
-
+<%= rating_for @wisatum, "kepuasan" %>
 <%= link_to 'Edit', edit_wisatum_path(@wisatum) %> |
 <%= link_to 'Back', wisata_path %>
