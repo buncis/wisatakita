@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Reviews</h1>
-
-<table>
-  <thead>
+<h1>Review Wisata</h1>
+<div class="table-responsive table-bordered">
+  <table class="table">
+    <thead>
     <tr>
       <th>Title</th>
       <th>Content</th>
@@ -26,8 +26,8 @@
       </tr>
     <% end %>
   </tbody>
-</table>
-
+  </table>
+</div>
 <br>
 
-<%= link_to 'New Review', new_review_path %>
+<a href="../reviews/new" class="btn btn-primary" role="button">Reviews Wisata Baru</a>

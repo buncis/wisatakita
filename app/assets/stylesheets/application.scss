@@ -3,16 +3,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* variable */
+/* variables */
 
 @import "base/_variables.scss";
-
-/* mixin */
-
 @import "base/_mixin.scss";
-
-/* base */
-
 @import "base/_base.scss";
-@import "_login-guides.scss";
+@import "components/_slideshow.scss";
 @import "components/_panel.scss";
+@import "components/_navbar.scss"
