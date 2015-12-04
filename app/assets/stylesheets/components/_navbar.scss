@@ -1,13 +1,34 @@
 .navbar {
+  .navbar-nav {
+    li {
+      a {
+        &:hover,
+        &:focus {
+          background: rgba(0, 177, 255, 0.85);
+        }
+      }
+    }
+  }
+  .navbar-form {
+    button {
+      &:hover,
+      &:focus {
+        background: rgba(0, 177, 255, 0.85);
+      }
+    }
+  }
   a {
     color: black;
   }
   font-weight: 800;
-  background-color: bisque;
+  background-color: rgba(247, 98, 98, 0.88);
 }
 .form-group {
   .btn {
     background-color: burlywood;
     font-weight: 800;
   }
+}
+.navbar-kanan {
+  padding-right: 5px;
 }
