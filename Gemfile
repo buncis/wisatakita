@@ -13,6 +13,7 @@ gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'ratyrate', '~> 1.2', '>= 1.2.2.alpha'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'slim', '~> 3.0', '>= 3.0.6'
+gem 'carrierwave', '~> 0.10.0'
 
 group :development, :test do
   gem 'byebug'

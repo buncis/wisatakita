@@ -1,0 +1,44 @@
+ .row
+    .col-md-5.col-md-offset-4
+      .panel.panel-default.panel-v2
+        .panel-heading
+          h4.panel-title =title
+        .panel-body
+          =form_for(@wisatum, class: "form-horizontal") do |f| 
+              -if @wisatum.errors.any?
+                  #error_explanation
+                    <h2>=pluralize(@wisatum.errors.count, "error") %> prohibited this wisatum from being saved:</h2>
+
+                    <ul>
+                      -@wisatum.errors.full_messages.each do |message|
+                        <li><%= message %></li>
+                    </ul>
+              .form-group
+                label.col-sm-5.control-label for="inputEmail3"  Nama
+                .col-sm-7
+                  =f.text_field :nama, :autofocus => true, :class => "form-control"
+                  br
+              .form-group
+                label.col-sm-5.control-label for="inputNama"  Harga
+                .col-sm-7
+                   =f.number_field :harga, :class => "form-control"
+                   br
+              .form-group
+                label.col-sm-5.control-label for="inputAlamat"  Info
+                .col-sm-7
+                   =f.text_area :info, :class => "form-control"
+                   br              
+              .form-group
+                label.col-sm-5.control-label for="inputEmail3"  Foto
+                .col-sm-7
+                  =f.text_field :foto, :autofocus => true, :class => "form-control"
+                  br
+              .form-group
+                .col-sm-12
+                  =f.submit "Submit", :class => "btn btn-default pull-right"
+                  -if action_name == "new"
+                    =link_to 'Back', wisata_path, :class => "pull-left"
+                  -if action_name == "edit"
+                    =link_to 'Show', @wisatum 
+                    |  | 
+                    =link_to 'Back', wisata_path

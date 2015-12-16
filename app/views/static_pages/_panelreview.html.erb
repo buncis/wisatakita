@@ -1,40 +1,81 @@
 <div class="panel panel-default panel-review">
   <div class="panel-heading">
     <h3 class="panel-title">
-      Top Review
+      Recent Review
     </h3>
   </div>
-  <div class="panel-body">
-    <div class="table-responsive table-bordered">
-      <table class="table">
-        <thead>
-        <tr>
-          <th>Title</th>
-          <th>Content</th>
-          <th>Wisata</th>
-          <th>User</th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <% @reviews.each do |review| %>
-          <tr>
-            <td><%= review.title %></td>
-            <td><%= review.content %></td>
-            <td><%= review.wisata %></td>
-            <td><%= review.user %></td>
-            <td><%= link_to 'Show', review %></td>
-            <td><%= link_to 'Edit', edit_review_path(review) %></td>
-            <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
-        <% end %>
-      </tbody>
-      </table>
+    <div class="panel-body panel-bd-home-review">
+    <div class="row media media-review">
+      <div class="col-md-3 media-img">
+        <%= image_tag ("a.jpg"), {:class => "img-responsive"} %>
+      </div>
+      <div class="col-md-9 media-konten">
+        <h5 class="nama"><a href="#">Antonius Angga Kurniawan</a></h5>
+        <h6 class="tempat">@TransStudioBandung</h6>
+        <h6 class="kalimat">Tempat yang menyenangkan dengan aneka permainan menarik ^_^</h6>
+        <br>
+        <br>
+        <h6 class="like-comment"><span class="glyphicon glyphicon-thumbs-up like"><span class="badge">1000</span></span>
+          <span class="glyphicon glyphicon-comment comment"><span class="badge">500</span></span>
+            <span class="tanggal-review">9 Desember 2015</span></h6>
+      </div>
     </div>
-    <br>
-
   </div>
+  
+  <div class="panel-body panel-bd-home-review">
+    <div class="row media media-review">
+      <div class="col-md-3 media-img">
+        <%= image_tag ("a.jpg"), {:class => "img-responsive"} %>
+      </div>
+      <div class="col-md-9 media-konten">
+        <h5 class="nama"><a href="#">Wawan Budiman</a></h5>
+        <h6 class="tempat">@TransStudioBandung</h6>
+        <h6 class="kalimat">Tempat yang menyenangkan dengan aneka permainan menarik ^_^</h6>
+        <br>
+        <br>
+        <h6 class="like-comment"><span class="glyphicon glyphicon-thumbs-up like"><span class="badge">1000</span></span>
+          <span class="glyphicon glyphicon-comment comment"><span class="badge">500</span></span>
+            <span class="tanggal-review">9 Desember 2015</span></h6>
+      </div>
+    </div>
+  </div>
+  
+  <div class="panel-body panel-bd-home-review">
+    <div class="row media media-review">
+      <div class="col-md-3 media-img">
+        <%= image_tag ("a.jpg"), {:class => "img-responsive"} %>
+      </div>
+      <div class="col-md-9 media-konten">
+        <h5 class="nama"><a href="#">Wawan Budiman</a></h5>
+        <h6 class="tempat">@TransStudioBandung</h6>
+        <h6 class="kalimat">Tempat yang menyenangkan dengan aneka permainan menarik ^_^</h6>
+        <br>
+        <br>
+        <h6 class="like-comment"><span class="glyphicon glyphicon-thumbs-up like"><span class="badge">1000</span></span>
+          <span class="glyphicon glyphicon-comment comment"><span class="badge">500</span></span>
+            <span class="tanggal-review">9 Desember 2015</span></h6>
+      </div>
+    </div>
+  </div>
+  
+   <div class="panel-body panel-bd-home-review">
+    <div class="row media media-review">
+      <div class="col-md-3 media-img">
+        <%= image_tag ("a.jpg"), {:class => "img-responsive"} %>
+      </div>
+      <div class="col-md-9 media-konten">
+        <h5 class="nama"><a href="#">Wawan Budiman</a></h5>
+        <h6 class="tempat">@TransStudioBandung</h6>
+        <h6 class="kalimat">Tempat yang menyenangkan dengan aneka permainan menarik ^_^</h6>
+        <br>
+        <br>
+        <h6 class="like-comment"><span class="glyphicon glyphicon-thumbs-up like"><span class="badge">1000</span></span>
+          <span class="glyphicon glyphicon-comment comment"><span class="badge">500</span></span>
+            <span class="tanggal-review">9 Desember 2015</span></h6>
+      </div>
+    </div>
+  </div>
+  
 </div>
     
-/    <!--<a href="../reviews/new" class="btn btn-primary" role="button">Wisata Baru</a>-->
+<!--<a href="../reviews/new" class="btn btn-primary" role="button">Wisata Baru</a>-->
