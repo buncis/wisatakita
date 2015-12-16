@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tgl: 2015-12-16
+  judul: MyString
+  isi: MyText
+  foto: MyString
+
+two:
+  tgl: 2015-12-16
+  judul: MyString
+  isi: MyText
+  foto: MyString
