@@ -1,0 +1,25 @@
+p#notice =notice
+h1 Daftar Wisata
+.table-responsive.table-bordered
+  table.table
+    thead
+      tr
+        th Nama Wisata
+        th Harga
+        th Informasi
+        th Foto Wisata
+        th colspan="3" 
+    tbody
+        -@wisata.each do |wisatum|
+          tr
+            td =wisatum.nama 
+            td =wisatum.harga 
+            td =wisatum.info 
+            td =wisatum.foto 
+            td =link_to 'Show', wisatum 
+            td =link_to 'Edit', edit_wisatum_path(wisatum) 
+            td =link_to 'Destroy', wisatum, method: :delete, data: {confirm: 'Are you sure?'}
+
+br
+a.btn.btn-primary href="../wisata/new" role="button"  Wisata Baru
+

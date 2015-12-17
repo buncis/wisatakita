@@ -1,0 +1,24 @@
+p#notice =notice
+h1 Review Wisata
+.table-responsive.table-bordered
+  table.table
+    thead
+      tr
+        th Title
+        th Content
+        th Wisata
+        th User
+        th colspan="3" 
+    tbody
+      -@reviews.each do |review|
+        tr
+          td =review.title 
+          td =review.content 
+          td =review.wisata 
+          td =review.user 
+          td =link_to 'Show', review 
+          td =link_to 'Edit', edit_review_path(review) 
+          td =link_to 'Destroy', review, method: :delete, data: {confirm: 'Are you sure?'}   
+      
+br
+a.btn.btn-primary href="../reviews/new" role="button"  Reviews Wisata Baru

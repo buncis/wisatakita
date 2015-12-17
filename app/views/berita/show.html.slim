@@ -1,0 +1,15 @@
+p#notice =notice 
+p
+  strong Tgl:
+    =@beritum.tgl 
+p
+  strong Judul:
+    =@beritum.judul 
+p
+  strong Isi:
+    =@beritum.isi 
+p
+  strong Foto:
+    =@beritum.foto 
+  =link_to 'Edit', edit_beritum_path(@beritum)
+  =link_to 'Back', berita_path 

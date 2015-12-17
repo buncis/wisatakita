@@ -1,0 +1,72 @@
+=render'navbar' 
+header.business-header
+  .container
+    .row
+      .col-lg-12
+        .nama_rating
+          h1.tagline.-bottom Nama Tempat
+          .ratingg
+            span.glyphicon.glyphicon-star style=("color:yellow; font-size:30px") 
+            span.glyphicon.glyphicon-star style=("color:yellow; font-size:30px") 
+            span.glyphicon.glyphicon-star style=("color:yellow; font-size:30px") 
+            span.glyphicon.glyphicon-star style=("color:yellow; font-size:30px") 
+            span.glyphicon.glyphicon-star style=("color:yellow; font-size:30px") 
+
+.container
+  hr
+  .row
+    .col-sm-8
+      center
+        | iframe allowfullscreen="" frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.395875980549!2d106.79737574988295!3d-6.597623566305319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5c412a67abb%3A0x75f23c6b45a37ee5!2sBogor+Botanical+Gardens!5e0!3m2!1sen!2sid!4v1450263562780" style="border:0" width="600"
+      hr
+      address
+        p Alamat
+        p Harga Tiket
+      address
+        p.glyphicon.glyphicon-earphone title="Phone"  :
+        | (123) 456-7890
+        br
+        p.glyphicon.glyphicon-envelope title="Email"  :
+        a href="mailto:#"  name@example.com
+      hr
+      h2 Tempat Wisata Terdekat
+      br
+      .row
+        .col-xs-3
+          img src="http://placehold.it/50x50" 
+          p Nama tempat
+        .col-xs-3
+          img src="http://placehold.it/50x50" 
+          p Nama tempat
+        .col-xs-3
+          img src="http://placehold.it/50x50" 
+          p Nama tempat
+        .col-xs-3
+          img src="http://placehold.it/50x50" 
+          p Nama tempat
+    .col-sm-4
+      h2 Review
+      br
+      .row
+        .col-sm-3
+          img src="#" 
+        .col-sm-9
+          | Anto
+      h4 Tempatnya bagus nih, jangan kesini ya !
+      hr
+      .row
+        .col-sm-3
+          img src="#" 
+        .col-sm-9
+          | Angga
+      h4 Maal coy
+      hr
+      .row
+        .col-sm-3
+          img src="#" 
+        .col-sm-9
+          | Irvan
+      h4 blom pernah kesini nih
+      hr
+  hr
+  =render'footer'

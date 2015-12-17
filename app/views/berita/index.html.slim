@@ -1,0 +1,23 @@
+p#notice =notice 
+h1 Listing Berita
+table
+  thead
+    tr
+      th Tgl
+      th Judul
+      th Isi
+      th Foto
+      th colspan="3" 
+  tbody
+    |  -@berita.each do |beritum| 
+    tr
+      td =beritum.tgl 
+      td =beritum.judul 
+      td =beritum.isi 
+      td =beritum.foto 
+      td =link_to 'Show', beritum 
+      td =link_to 'Edit', edit_beritum_path(beritum) 
+      td =link_to 'Destroy', beritum, method: :delete, data:   confirm: 'Are you sure?'   
+    
+  br
+  =link_to 'New Beritum', new_beritum_path 

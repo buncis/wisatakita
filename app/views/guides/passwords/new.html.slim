@@ -1,0 +1,20 @@
+.row
+    .col-md-5.col-md-offset-4
+      .panel.panel-default.panel-v1
+        .panel-heading
+          h4.panel-title Forgot your Password ?
+        .panel-body
+          =form_for(resource, as: resource_name, url: session_path(resource_name), class: "form-horizontal") do |f| 
+            .form-group
+              label.col-sm-2.control-label for="inputEmail"  Email
+              .col-sm-10
+                =f.email_field :email, :class => "form-control", :autofocus=> true
+                br
+            .form-group
+              .col-sm-offset-2.col-sm-10
+                =f.submit "Send me reset password instructions"
+                =render "guides/shared/links"    
+  
+  
+  
+ 
