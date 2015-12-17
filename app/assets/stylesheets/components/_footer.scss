@@ -3,9 +3,16 @@
   padding-right: 0px;
 }
 footer {
-  background-color: #000000;
+  background-color: #cc004c;
   margin-top: 0px;
-  padding-top: 80px;
+  padding-top: 20px;
+  a {
+    color: #fcb711;
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
 }
 hr {
   margin-top: 20px;

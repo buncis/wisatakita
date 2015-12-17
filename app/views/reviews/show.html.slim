@@ -1,0 +1,16 @@
+p#notice =notice
+p
+  strong Title:
+    =@review.title 
+p
+  strong Content:
+    =@review.content 
+p
+  strong Wisata:
+    =@review.wisata 
+p
+  strong User:
+    =@review.user 
+
+  =link_to 'Edit', edit_review_path(@review)  |
+  =link_to 'Back', reviews_path

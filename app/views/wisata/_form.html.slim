@@ -5,14 +5,13 @@
           h4.panel-title =title
         .panel-body
           =form_for(@wisatum, class: "form-horizontal") do |f| 
-              -if @wisatum.errors.any?
-                  #error_explanation
-                    <h2>=pluralize(@wisatum.errors.count, "error") %> prohibited this wisatum from being saved:</h2>
+              /-if @wisatum.errors.any?
+                #error_explanation
+                  h2 =pluralize(@wisatum.errors.count, "error") prohibited this wisatum from being saved:
 
-                    <ul>
+                    ul
                       -@wisatum.errors.full_messages.each do |message|
-                        <li><%= message %></li>
-                    </ul>
+                        li =message
               .form-group
                 label.col-sm-5.control-label for="inputEmail3"  Nama
                 .col-sm-7

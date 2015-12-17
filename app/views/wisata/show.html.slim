@@ -1,0 +1,17 @@
+p#notice =notice 
+p
+  strong Nama:
+    #{@wisatum.nama} 
+p
+  strong Harga:
+    #{@wisatum.harga} 
+p
+  strong Info:
+    #{@wisatum.info} 
+p
+  strong Foto:
+    #{@wisatum.foto} 
+  =rating_for @wisatum, "kepuasan" 
+  =link_to 'Edit', edit_wisatum_path(@wisatum)
+  =link_to 'Back', wisata_path 
+

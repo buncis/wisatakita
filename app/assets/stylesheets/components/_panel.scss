@@ -1,85 +1,113 @@
-        .panel-popular {
-          padding-left: 0px;
-          padding-right: 0px;
-          margin-bottom: 0px;
-          .panel-heading {
-            background-color: rgba(127, 255, 0, 0.8);
-          }
-          .panel-title {
-            text-align: center;
-            font-weight: 800;
-          }
-        }
-        .panel-review {
-          padding-left: 0px;
-          padding-right: 0px;
-          margin-bottom: 0px;
-          .panel-heading {
-            background-color: rgba(0, 235, 255, 0.78);
-          }
-          .panel-title {
-            text-align: center;
-            font-weight: 800;
-          }
-        }
-        .panel-berita {
-          padding-left: 0px;
-          padding-right: 0px;
-          margin-bottom: 0px;
-          .panel-heading {
-            background-color: rgba(255, 128, 0, 0.83);
-          }
-          .panel-title {
-            text-align: center;
-            font-weight: 800;
-          }
-        }
-        .panel-v1 {
-          .panel-heading {
-            background-color: rgba(28, 245, 137, 0.69);
-            .panel-title {
-              font-weight: 800;
-            }
-          }
-          .panel-body {
-            .form-group {
-              .link-login {
-                float: left;
-              }
-            }
-          }
-        }
-        .panel-v2 {
-          .panel-heading {
-            background-color: rgba(36, 172, 222, 0.69);
-            .panel-title {
-              font-weight: 800;
-            }
-          }
-          .panel-body {
-            .form-group {
-              .link-login {
-                float: left;
-              }
-            }
-          }
-        }
-        .panel-v3 {
-          .panel-heading {
-            background-color: rgba(255, 56, 163, 0.69);
-            .panel-title {
-              font-weight: 800;
-            }
-          }
-          .panel-body {
-            .form-group {
-              .link-login {
-                float: left;
-              }
-            }
-          }
-        }
-        hr {
-          border-color: darkcyan;
-          border-width: 5px;
-        }
+.panel {
+  border: 0px;
+}
+.panel-popular {
+  z-index: 1;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  .panel-heading {
+    background-color: #0db14b;
+    color: white;
+    border-radius: 0px;
+    border-bottom: 0px;
+  }
+  .panel-body {
+    background: #d8d8d8;
+    padding-top: 0px;
+    border: 0px;
+  }
+  .panel-title {
+    text-align: center;
+    font-weight: 800;
+  }
+}
+.panel-review {
+  z-index: 10;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  .panel-heading {
+    box-shadow: 0 0px 0px 0px rgba(39, 19, 19, 0.3), 0 -0px 0px 0px rgba(39, 19, 19, 0.3), -12px 0 10px -4px rgba(114, 114, 114, 0.29), 12px 0 10px -4px rgba(114, 114, 114, 0.29);
+    background-color: #0b9a41;
+    color: white;
+    border-radius: 0px;
+  }
+  .panel-body {
+    box-shadow: 0 0px 0px 0px rgba(114, 114, 114, 0.29), 0 -0px 0px 0px rgba(114, 114, 114, 0.29), -12px 0 10px -4px rgba(114, 114, 114, 0.29), 12px 0 10px -4px rgba(114, 114, 114, 0.29);
+  }
+  .panel-title {
+    text-align: center;
+    font-weight: 800;
+  }
+}
+.panel-berita {
+  z-index: 1;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  .panel-heading {
+    background-color: #0db14b;
+    color: white;
+    border-radius: 0px;
+    border: 0px;
+  }
+  .panel-body {
+    background: #d8d8d8;
+    padding-top: 0px;
+    border: 0px;
+  }
+  .panel-title {
+    text-align: center;
+    font-weight: 800;
+  }
+}
+.panel-v1 {
+  .panel-heading {
+    background-color: rgba(28, 245, 137, 0.69);
+    .panel-title {
+      font-weight: 800;
+    }
+  }
+  .panel-body {
+    .form-group {
+      .link-login {
+        float: left;
+      }
+    }
+  }
+}
+.panel-v2 {
+  .panel-heading {
+    background-color: rgba(36, 172, 222, 0.69);
+    .panel-title {
+      font-weight: 800;
+    }
+  }
+  .panel-body {
+    .form-group {
+      .link-login {
+        float: left;
+      }
+    }
+  }
+}
+.panel-v3 {
+  .panel-heading {
+    background-color: rgba(255, 56, 163, 0.69);
+    .panel-title {
+      font-weight: 800;
+    }
+  }
+  .panel-body {
+    .form-group {
+      .link-login {
+        float: left;
+      }
+    }
+  }
+}
+hr {
+  border-color: darkcyan;
+  border-width: 5px;
+}

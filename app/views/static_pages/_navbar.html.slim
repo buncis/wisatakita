@@ -1,0 +1,80 @@
+nav.navbar.navbar-fixed-top 
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed aria-expanded="false" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brnd href="/" style="padding-top:0px;" 
+      ul.list-inline style="margin-bottom:0px;" 
+        li =image_tag ('jabar.png'), :class => "img-responsive", :width => "35px", :style => "margin-top: 5px;"
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.list-inline
+        li.dropdown.mega-dropdown
+          a.dropdown-toggle data-toggle="dropdown" href="#" 
+            | Telusur Jawa Barat
+            span.glyphicon.glyphicon-chevron-down.pull-right style=("margin-top: 5px; margin-left: 5px; font-size: 10px;") 
+          ul.dropdown-menu.mega-dropdown-menu.row style="width: 50%;"
+            li.col-sm-3
+              ul
+                li.dropdown-header 
+                li
+                  a href="#"  Bogor
+                li
+                  a href="#"  Bandung
+                li
+                  a href="#"  Bandung Barat
+                li
+                  a href="#"  Bekasi
+                li
+                  a href="#"  Depok
+                li
+                  a href="#"  Pangandaran
+                li
+                  a href="#"  Tasikmalaya 
+          
+            li.col-sm-3
+              ul
+                li.dropdown-header 
+                li
+                  a href="#"  Ciamis
+                li
+                  a href="#"  Cirebon
+                li
+                  a href="#"  Cianjur
+                li
+                  a href="#"  Garut
+                li
+                  a href="#"  Indramayu
+                li
+                  a href="#"  Subang
+                li
+                  a href="#"  Sukabumi
+            li.col-sm-3
+              ul
+                li.dropdown-header
+                li
+                  a href="#"  Sumedang
+                li
+                  a href="#"  Karawang
+                li
+                  a href="#"  Kuningan
+                li
+                  a href="#"  Majalengka
+                li
+                  a href="#"  Purwakarta
+                li
+                  a href="#"  Banjar
+                li
+                  a href="#"  Cimahi
+                
+      form.navbar-form.navbar-left role="search" 
+        .form-group
+          input.form-control placeholder="Search" type="text" 
+        button.btn.btn-info type="submit"  Temukan
+      p.navbar-text.navbar-right.navbar-kanan
+        | Login as
+        a.navbar-link href="users/sign_in"   User 
+        | or
+        a.navbar-link href="guides/sign_in"   Guide
